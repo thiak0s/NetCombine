@@ -67,4 +67,4 @@ Este proyecto se distribuye bajo la licencia [MIT](LICENSE).
 
 ---
 
-¡Espero que encuentres útil NetCombine para tus necesidades de generación de contraseñas y diccionarios personalizados! Si tienes preguntas, problemas o sugerencias, no dudes en [contactarme](https://github.com/thiak0s). ¡Gracias por utilizar NetCombine!
+¡Espero que encuentres útil NetCombine para tus trabajos de escaneo y análisis de red all-in-one! Si tienes preguntas, problemas o sugerencias, no dudes en [contactarme](https://github.com/thiak0s). ¡Gracias por utilizar NetCombine!
