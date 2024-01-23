@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Este script instalará las dependencias necesarias para la herramienta ScanFull v1.0."
+echo "Este script instalará las dependencias necesarias para la herramienta NetCombine v1.0."
 echo "Asegúrate de tener los privilegios necesarios para instalar paquetes en el sistema."
 echo "Presiona Enter para continuar o Ctrl+C para cancelar."
 read -r
