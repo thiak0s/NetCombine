@@ -57,7 +57,14 @@ python netcombine.py <objetivo> [-o <output_file>] [-p <puertos>]
    python netcombine.py --help
    ```
 
-## Información del Autor
-Herramienta creada por [thiak0s](https://github.com/thiak0s) en 2024. NetCombine está diseñada para ser utilizada de manera ética y responsable en actividades de ciberseguridad y pentesting.
+### Notas Importantes
 
-Recuerda utilizar esta herramienta de manera ética y responsable
+- Recuerda utilizar esta herramienta de manera ética y responsable.
+
+### Licencia
+
+Este proyecto se distribuye bajo la licencia [MIT](LICENSE).
+
+---
+
+¡Espero que encuentres útil NetCombine para tus necesidades de generación de contraseñas y diccionarios personalizados! Si tienes preguntas, problemas o sugerencias, no dudes en [contactarme](https://github.com/thiak0s). ¡Gracias por utilizar NetCombine!
