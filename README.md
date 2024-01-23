@@ -18,19 +18,13 @@ NetCombine es una herramienta de escaneo y análisis de red diseñada para usuar
 - Python 3.x
 - Módulos requeridos: argparse, subprocess, logging, termcolor, pyfiglet, concurrent.futures, ipaddress, platform.
 
-# Instalación de Dependencias
-
+## Instalación de Dependencias
 Se proporciona un script de instalación (`install_dependencies.sh`) que facilita la configuración del entorno necesario para ejecutar NetCombine. Asegúrate de tener los privilegios necesarios para instalar paquetes en el sistema antes de ejecutar el script.
 Este script realiza la instalación de las siguientes dependencias:
 - Paquetes Python: termcolor, pyfiglet, platform.
 - Herramientas de escaneo: nmap, fierce, theharvester, sublist3r, testssl.sh, nikto.
 
 Además, actualiza el PATH para incluir los scripts de nmap y la carpeta `/usr/local/bin`. Después de ejecutar el script, las herramientas estarán instaladas y configuradas correctamente.
-
-## Instalación de Dependencias
-```bash
-pip install termcolor pyfiglet
-```
 
 ## Uso
 ```bash
