@@ -1,12 +1,12 @@
 #!/bin/bash
 
-echo "Este script instalará las dependencias necesarias para la herramienta NetCombine v1.0."
+echo "Este script instalará las dependencias necesarias para la herramienta NetCombine"
 echo "Asegúrate de tener los privilegios necesarios para instalar paquetes en el sistema."
 echo "Presiona Enter para continuar o Ctrl+C para cancelar."
 read -r
 install_python_packages() {
     apt-get install -y python3 python3-pip
-    pip3 install termcolor pyfiglet platform
+    pip3 install termcolor platform
 }
 install_apt_packages() {
     apt-get update

@@ -1,11 +1,10 @@
 import argparse
-import subprocess
-import logging
-from termcolor import colored
-import pyfiglet
 import concurrent.futures
 import ipaddress
+import logging
 import platform
+import subprocess
+from termcolor import colored
 
 logging.basicConfig(filename='NetCombine.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -102,30 +101,22 @@ def escanear_desde_archivo(archivo, output_file=None, puertos=None):
             escanear_objetivo(objetivo, output_file, puertos)
 
 def print_author_info():
+    print(colored("_____   __    ______________                ______ _____             ", color="green", attrs=["bold"]))
+    print(colored("___  | / /______  /__  ____/____________ ______  /____(_)___________ ", color="green", attrs=["bold"]))
+    print(colored("__   |/ /_  _ \\  __/  /    _  __ \\_  __ `__ \\_  __ \\_  /__  __ \\  _ \\", color="green", attrs=["bold"]))
+    print(colored("_  /|  / /  __/ /_ / /___  / /_/ /  / / / / /  /_/ /  / _  / / /  __/", color="green", attrs=["bold"]))
+    print(colored("/_/ |_/  \\___/\\__/ \\____/  \\____//_/ /_/ /_//_.___//_/  /_/ /_/\\___/ ", color="green", attrs=["bold"]))
+    print(colored("\t\t\t\t\t\t\t\t\tv1.0.1\n", color="red", attrs=["bold"]))
+
     print(colored("--- Información del Autor y Descripción ---", color="cyan"))
-    print(colored("************** NetCombine v1.0 ************\n", color="green"))
+    print(colored("***************** NetCombine **************\n", color="green"))
     print(colored("[Herramienta creada por thiak0s - 2024]\n", color="yellow"))
     print(colored("Utilidad para Escaneo y Análisis de Red que integra nmap, testssl, fierce, theHarvester, sublist3r", color="cyan"))
     print(colored("y otras más, para el análisis exhaustivo de objetivos de red y detección de vulnerabilidades.", color="cyan"))
-    print(colored("Diseñada para usuarios avanzados en ciberseguridad y pentesting.", color="cyan"))
+    print(colored("Diseñada para colaboradores en ciberseguridad y pentesting.", color="cyan"))
     print(colored("***** Recuerda utilizar esta herramienta de manera ética y responsable. *****\n", color="cyan"))
 
 def main():
-    title_part1 = pyfiglet.figlet_format("NetCombine", font="speed")
-    title_part2 = pyfiglet.figlet_format("v1.0", font="stop")
-
-    lines1 = title_part1.split('\n')
-    lines2 = title_part2.split('\n')
-    max_lines = max(len(lines1), len(lines2))
-
-    lines1 += [''] * (max_lines - len(lines1))
-    lines2 += [''] * (max_lines - len(lines2))
-
-    for line1, line2 in zip(lines1, lines2):
-        colored_title_part1 = colored(line1, color="green", attrs=["bold"])
-        colored_title_part2 = colored(line2, color="red", attrs=["bold"])
-        print(colored_title_part1 + " " + colored_title_part2)
-
     print_author_info()
 
     parser = argparse.ArgumentParser(description='Herramienta de Escaneo y Análisis de Red')

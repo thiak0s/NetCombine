@@ -1,9 +1,9 @@
-# README - NetCombine v1.0
+# README - NetCombine v1.0.1
 
 ![NetCombine Logo](netcombine_logo.png)
 
 ## Descripción
-NetCombine es una herramienta de escaneo y análisis de red diseñada para usuarios avanzados en ciberseguridad y pentesting. Integrando diversas herramientas como nmap, testssl, fierce, theHarvester, sublist3r, entre otras, NetCombine permite realizar un análisis exhaustivo de objetivos de red y la detección de vulnerabilidades.
+NetCombine es una herramienta de escaneo y análisis de red diseñada para colaboradores en ciberseguridad y pentesting. Integrando diversas herramientas como nmap, testssl, fierce, theHarvester, sublist3r, entre otras, NetCombine permite realizar un análisis exhaustivo de objetivos de red y la detección de vulnerabilidades.
 
 **Creador:** thiak0s - 2024
 

@@ -1,9 +1,9 @@
-# README - NetCombine v1.0
+# README - NetCombine v1.0.1
 
 ![NetCombine Logo](netcombine_logo.png)
 
 ## Descripción
-NetCombine es una herramienta de escaneo y análisis de red diseñada para usuarios avanzados en ciberseguridad y pentesting. Integrando diversas herramientas como nmap, testssl, fierce, theHarvester, sublist3r, entre otras, NetCombine permite realizar un análisis exhaustivo de objetivos de red y la detección de vulnerabilidades.
+NetCombine es una herramienta de escaneo y análisis de red diseñada para colaboradores en ciberseguridad y pentesting. Integrando diversas herramientas como nmap, testssl, fierce, theHarvester, sublist3r, entre otras, NetCombine permite realizar un análisis exhaustivo de objetivos de red y la detección de vulnerabilidades.
 
 **Creador:** thiak0s - 2024
 
@@ -57,7 +57,14 @@ python netcombine.py <objetivo> [-o <output_file>] [-p <puertos>]
    python netcombine.py --help
    ```
 
-## Información del Autor
-Herramienta creada por [thiak0s](https://github.com/thiak0s) en 2024. NetCombine está diseñada para ser utilizada de manera ética y responsable en actividades de ciberseguridad y pentesting.
+### Notas Importantes
 
-Recuerda utilizar esta herramienta de manera ética y responsable
+- Recuerda utilizar esta herramienta de manera ética y responsable.
+
+### Licencia
+
+Este proyecto se distribuye bajo la licencia [MIT](LICENSE).
+
+---
+
+¡Espero que encuentres útil NetCombine para tus trabajos de escaneo y análisis de red all-in-one! Si tienes preguntas, problemas o sugerencias, no dudes en [contactarme](https://github.com/thiak0s). ¡Gracias por utilizar NetCombine!
