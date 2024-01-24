@@ -8,6 +8,22 @@ from termcolor import colored
 
 logging.basicConfig(filename='NetCombine.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+def print_author_info():
+    print(colored("_____   __    ______________                ______ _____             ", color="green", attrs=["bold"]))
+    print(colored("___  | / /______  /__  ____/____________ ______  /____(_)___________ ", color="green", attrs=["bold"]))
+    print(colored("__   |/ /_  _ \\  __/  /    _  __ \\_  __ `__ \\_  __ \\_  /__  __ \\  _ \\", color="green", attrs=["bold"]))
+    print(colored("_  /|  / /  __/ /_ / /___  / /_/ /  / / / / /  /_/ /  / _  / / /  __/", color="green", attrs=["bold"]))
+    print(colored("/_/ |_/  \\___/\\__/ \\____/  \\____//_/ /_/ /_//_.___//_/  /_/ /_/\\___/ ", color="green", attrs=["bold"]))
+    print(colored("\t\t\t\t\t\t\t\t\tv1.0.1\n", color="red", attrs=["bold"]))
+
+    print(colored("--- Información del Autor y Descripción ---", color="cyan"))
+    print(colored("***************** NetCombine **************\n", color="green"))
+    print(colored("[Herramienta creada por thiak0s - 2024]\n", color="yellow"))
+    print(colored("Utilidad para Escaneo y Análisis de Red que integra nmap, testssl, fierce, theHarvester, sublist3r", color="cyan"))
+    print(colored("y otras más, para el análisis exhaustivo de objetivos de red y detección de vulnerabilidades.", color="cyan"))
+    print(colored("Diseñada para colaboradores en ciberseguridad y pentesting.", color="cyan"))
+    print(colored("***** Recuerda utilizar esta herramienta de manera ética y responsable. *****\n", color="cyan"))
+
 def ejecutar_comando(comando):
     try:
         resultado = subprocess.check_output(comando, text=True, shell=True)
@@ -99,22 +115,6 @@ def escanear_desde_archivo(archivo, output_file=None, puertos=None):
             escanear_red(objetivo, output_file, puertos)
         else:
             escanear_objetivo(objetivo, output_file, puertos)
-
-def print_author_info():
-    print(colored("_____   __    ______________                ______ _____             ", color="green", attrs=["bold"]))
-    print(colored("___  | / /______  /__  ____/____________ ______  /____(_)___________ ", color="green", attrs=["bold"]))
-    print(colored("__   |/ /_  _ \\  __/  /    _  __ \\_  __ `__ \\_  __ \\_  /__  __ \\  _ \\", color="green", attrs=["bold"]))
-    print(colored("_  /|  / /  __/ /_ / /___  / /_/ /  / / / / /  /_/ /  / _  / / /  __/", color="green", attrs=["bold"]))
-    print(colored("/_/ |_/  \\___/\\__/ \\____/  \\____//_/ /_/ /_//_.___//_/  /_/ /_/\\___/ ", color="green", attrs=["bold"]))
-    print(colored("\t\t\t\t\t\t\t\t\tv1.0.1\n", color="red", attrs=["bold"]))
-
-    print(colored("--- Información del Autor y Descripción ---", color="cyan"))
-    print(colored("***************** NetCombine **************\n", color="green"))
-    print(colored("[Herramienta creada por thiak0s - 2024]\n", color="yellow"))
-    print(colored("Utilidad para Escaneo y Análisis de Red que integra nmap, testssl, fierce, theHarvester, sublist3r", color="cyan"))
-    print(colored("y otras más, para el análisis exhaustivo de objetivos de red y detección de vulnerabilidades.", color="cyan"))
-    print(colored("Diseñada para colaboradores en ciberseguridad y pentesting.", color="cyan"))
-    print(colored("***** Recuerda utilizar esta herramienta de manera ética y responsable. *****\n", color="cyan"))
 
 def main():
     print_author_info()
